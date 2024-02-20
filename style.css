@@ -34,9 +34,7 @@ button {
 
 
 
-body {
-   
-}
+body {}
 
 .background-green {
     height: 100px;
@@ -67,7 +65,7 @@ body {
 }
 
 .main-content {
-    
+
     flex-grow: 1;
     background-image: url(./img/mine.jpg);
 }
@@ -76,129 +74,111 @@ body {
     height: 50px;
     background: rgb(234, 234, 234);
 }
-.footer{
+
+.footer {
     height: 50px;
     background: yellow;
 }
-.img{
+
+.img {
     width: 35px;
-    
+
     border-radius: 50%;
     object-fit: cover;
     aspect-ratio: 1/1;
     margin-left: 10px;
     margin-right: 10px;
 }
-.header-contain{
+
+.header-contain {
     padding-top: 10px;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.list-i{
+
+.list-i {
     display: flex;
     justify-content: center;
     gap: 5px;
     padding-right: 5px;
-    
+
 }
 
 
-.section-message{
-    height: 60px;
-    
-}
-.main-message{
-    padding-top: 10px;
-    align-items: center;
-    gap: 10px;
-    font-size: 10px;
-    display: flex;
-}
-.display-grid{
-    display: grid;
-}
-.fa-bell-slash{
-    color: rgb(166, 215, 249);;
-    margin-left: 10px;
-    padding-left: 5px;
-    background: white;
-    font-size: 15px;
-    border-radius: 999px;
-    padding: 10px 9px;
+
+
+
+.section-contacts {
+    overflow: auto;
+    flex-grow: 1;
 }
 
 
-.section-search{
-   
-    padding: 10px 5px;
-    height: 50px;
-}
-.search{
-    border: 1px solid lightgrey;
-    padding: 5px;
-    font-size: 10px;
-}
-.fa-magnifying-glass{
-    margin-left: 5px;
-    margin-right: 10px;
-    color: lightgray;
-}
 
-
-.section-contacts{
-    
-}
-
-.list-name{
-    font-size: 12px;
-    display: flex;
-   
-    flex-direction: column;
-}
-.contacts{
-    display: flex;
-    padding: 3px 0;
-    border-bottom: 1px solid lightgrey;
-    margin-bottom: 10px;
-}
-.time{
-    margin-left: 20px;
-    font-size: 10px;
-}
 
 @media (min-width:520px) {
     .sidebar {
-        display: block;
-        width: 50px;
+        display: flex;
+        flex-direction: column;
+        width: 60px;
     }
-    .list-i{
-        display: none;
-    }
-    .section-message{
-        background: none;
-    }
-    .main-message{
+
+    .list-i {
         display: none;
     }
 
-    
+    .section-search {
+        display: none;
+    }
+
+
+    .main-message {
+        display: none;
+    }
+
+    .list-name {
+        display: none;
+    }
+
+
+
+    .time {
+        display: none;
+    }
+
+    .contacts {
+        border-bottom: none;
+        margin-bottom: 20px;
+    }
+
+    .header {
+        margin-bottom: 15px;
+    }
 
 }
 
 @media (min-width:992px) {
     .sidebar {
-
+        display: flex;
+        flex-direction: column;
         width: 250px;
     }
-    .list-i{
+
+    .header {
+        margin-bottom: 0;
+    }
+
+    .list-i {
         display: flex;
     }
-    .main-message{
+
+    .main-message {
         display: flex;
     }
-    .section-message{
+
+    .section-message {
         background: rgb(166, 215, 249);
     }
 
@@ -208,4 +188,70 @@ body {
         height: 90%;
     }
 
+    .contacts {
+        display: flex;
+        padding: 3px 0;
+        border-bottom: 1px solid lightgrey;
+        margin-bottom: 10px;
+    }
+
+    .list-name {
+        font-size: 12px;
+        display: flex;
+
+        flex-direction: column;
+    }
+
+    .time {
+        display: inline-block;
+        margin-left: 20px;
+        font-size: 10px;
+    }
+
+    .section-message {
+        height: 60px;
+
+    }
+
+    .main-message {
+        padding-top: 10px;
+        align-items: center;
+        gap: 10px;
+        font-size: 10px;
+        display: flex;
+    }
+
+    .display-grid {
+        display: grid;
+    }
+
+    .fa-bell-slash {
+        color: rgb(166, 215, 249);
+        ;
+        margin-left: 10px;
+        padding-left: 5px;
+        background: white;
+        font-size: 15px;
+        border-radius: 999px;
+        padding: 10px 9px;
+    }
+
+
+    .section-search {
+        display: block;
+        padding: 10px 5px;
+        height: 50px;
+    }
+
+    .search {
+        border: 1px solid lightgrey;
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .fa-magnifying-glass {
+        margin-left: 5px;
+        margin-right: 10px;
+        color: lightgray;
+    }
 }
