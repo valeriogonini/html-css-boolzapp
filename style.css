@@ -129,6 +129,45 @@ body {
     padding: 10px 9px;
 }
 
+
+.section-search{
+   
+    padding: 10px 5px;
+    height: 50px;
+}
+.search{
+    border: 1px solid lightgrey;
+    padding: 5px;
+    font-size: 10px;
+}
+.fa-magnifying-glass{
+    margin-left: 5px;
+    margin-right: 10px;
+    color: lightgray;
+}
+
+
+.section-contacts{
+    
+}
+
+.list-name{
+    font-size: 12px;
+    display: flex;
+   
+    flex-direction: column;
+}
+.contacts{
+    display: flex;
+    padding: 3px 0;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 10px;
+}
+.time{
+    margin-left: 20px;
+    font-size: 10px;
+}
+
 @media (min-width:520px) {
     .sidebar {
         display: block;
