@@ -50,23 +50,18 @@ body {
     width: 100%;
     display: flex;
     background: rgb(217, 219, 215);
-	background: -moz-linear-gradient(
-		180deg,
-		rgba(78, 147, 137, 1) 150px,
-		rgba(217, 219, 215, 1) 150px
-	);
-	background: -webkit-linear-gradient(
-		180deg,
-		rgba(78, 147, 137, 1) 150px,
-		rgba(217, 219, 215, 1) 150px
-	);
-	background: linear-gradient(
-		180deg,
-		rgba(78, 147, 137, 1) 150px,
-		rgba(217, 219, 215, 1) 150px
-	);
+    background: -moz-linear-gradient(180deg,
+            rgba(78, 147, 137, 1) 150px,
+            rgba(217, 219, 215, 1) 150px);
+    background: -webkit-linear-gradient(180deg,
+            rgba(78, 147, 137, 1) 150px,
+            rgba(217, 219, 215, 1) 150px);
+    background: linear-gradient(180deg,
+            rgba(78, 147, 137, 1) 150px,
+            rgba(217, 219, 215, 1) 150px);
 }
-.fa-solid{
+
+.fa-solid {
     color: rgb(164, 167, 169);
 }
 
@@ -92,12 +87,15 @@ body {
 }
 
 .header {
-
+    align-items: center;
+    display: flex;
     height: 50px;
     background: rgb(234, 234, 234);
 }
 
 .footer {
+    display: flex;
+    align-items: center;
     height: 50px;
     background: rgb(242, 238, 235);
 }
@@ -112,13 +110,7 @@ body {
     margin-right: 10px;
 }
 
-.header-contain {
-    padding-top: 10px;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+
 
 .list-i {
     display: flex;
@@ -148,22 +140,26 @@ body {
     align-items: center;
     justify-content: center;
 }
-.main{
+
+.main {
     flex-grow: 1;
     padding: 30px;
     overflow-y: auto;
 }
-.chat{
+
+.chat {
     display: flex;
     flex-direction: column;
     align-items: end;
 }
-.chat-2{
+
+.chat-2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-.message-1{
+
+.message-1 {
     max-width: 400px;
     border-radius: 10px;
     margin-bottom: 30px;
@@ -173,7 +169,8 @@ body {
     padding: 20px 30px;
     background: rgb(222, 248, 192);
 }
-.message-2{
+
+.message-2 {
     max-width: 400px;
     border-radius: 10px;
     margin-bottom: 30px;
@@ -182,15 +179,35 @@ body {
     padding: 20px 30px;
     background: white;
 }
-.time-chat{
+
+.time-chat {
     position: absolute;
     right: 5px;
     font-size: 10px;
 }
-.main-content{
+
+.main-content {
     flex-direction: column;
 
     display: flex;
+}
+
+.fa-face-smile {
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(164, 167, 169);
+}
+
+.fa-microphone {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.input-footer {
+    padding: 10px;
+    flex-grow: 1;
+    border: none;
+
 }
 
 
@@ -267,12 +284,13 @@ body {
     .contacts {
         display: flex;
         padding: 3px 0;
-        
+
     }
-    .contacts:not(:last-child){
-        border-bottom: 1px solid rgb(234, 234, 234) ;
+
+    .contacts:not(:last-child) {
+        border-bottom: 1px solid rgb(234, 234, 234);
         margin-bottom: 10px;
-        
+
     }
 
 
