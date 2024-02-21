@@ -34,7 +34,10 @@ button {
 
 
 
-body {}
+body {
+    background: rgb(0, 45, 7);
+    background: linear-gradient(180deg, rgba(0, 45, 7, 1) 0%, rgba(0, 45, 7, 1) 26%, rgba(109, 109, 109, 0) 28%, rgba(109, 109, 109, 1) 29%);
+}
 
 .background-green {
     height: 100px;
@@ -46,7 +49,25 @@ body {}
     height: 100vh;
     width: 100%;
     display: flex;
-    background: grey;
+    background: rgb(217, 219, 215);
+	background: -moz-linear-gradient(
+		180deg,
+		rgba(78, 147, 137, 1) 150px,
+		rgba(217, 219, 215, 1) 150px
+	);
+	background: -webkit-linear-gradient(
+		180deg,
+		rgba(78, 147, 137, 1) 150px,
+		rgba(217, 219, 215, 1) 150px
+	);
+	background: linear-gradient(
+		180deg,
+		rgba(78, 147, 137, 1) 150px,
+		rgba(217, 219, 215, 1) 150px
+	);
+}
+.fa-solid{
+    color: rgb(164, 167, 169);
 }
 
 .container {
@@ -71,13 +92,14 @@ body {}
 }
 
 .header {
+
     height: 50px;
     background: rgb(234, 234, 234);
 }
 
 .footer {
     height: 50px;
-    background: yellow;
+    background: rgb(242, 238, 235);
 }
 
 .img {
@@ -101,8 +123,8 @@ body {}
 .list-i {
     display: flex;
     justify-content: center;
-    gap: 5px;
-    padding-right: 5px;
+    gap: 18px;
+    padding-right: 8px;
 
 }
 
@@ -115,7 +137,61 @@ body {}
     flex-grow: 1;
 }
 
+.header-main {
+    align-items: center;
+    justify-content: space-between;
+    display: flex
+}
 
+.contacts-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    flex-grow: 1;
+    padding: 30px;
+    overflow-y: auto;
+}
+.chat{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.chat-2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.message-1{
+    max-width: 400px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: start;
+    padding: 10px;
+    position: relative;
+    padding: 20px 30px;
+    background: rgb(222, 248, 192);
+}
+.message-2{
+    max-width: 400px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: start;
+    position: relative;
+    padding: 20px 30px;
+    background: white;
+}
+.time-chat{
+    position: absolute;
+    right: 5px;
+    font-size: 10px;
+}
+.main-content{
+    flex-direction: column;
+
+    display: flex;
+}
 
 
 @media (min-width:520px) {
@@ -191,9 +267,14 @@ body {}
     .contacts {
         display: flex;
         padding: 3px 0;
-        border-bottom: 1px solid lightgrey;
-        margin-bottom: 10px;
+        
     }
+    .contacts:not(:last-child){
+        border-bottom: 1px solid rgb(234, 234, 234) ;
+        margin-bottom: 10px;
+        
+    }
+
 
     .list-name {
         font-size: 12px;
@@ -204,7 +285,7 @@ body {}
 
     .time {
         display: inline-block;
-        margin-left: 20px;
+        margin-left: 25px;
         font-size: 10px;
     }
 
