@@ -139,11 +139,6 @@ body {
     flex-direction: column;
 }
 
-
-
-
-
-
 .section-contacts {
     overflow: auto;
     flex-grow: 1;
@@ -179,24 +174,19 @@ body {
     align-items: flex-start;
 }
 
-.message-1 {
+.message {
+    font-size: 13px;
     max-width: 400px;
     border-radius: 10px;
     margin-bottom: 30px;
     text-align: start;
     padding: 10px;
     position: relative;
-    padding: 20px 30px;
+    padding: 15px;
     background: rgb(222, 248, 192);
 }
 
-.message-2 {
-    max-width: 400px;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    text-align: start;
-    position: relative;
-    padding: 20px 30px;
+.message-background {
     background: white;
 }
 
