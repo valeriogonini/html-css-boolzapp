@@ -110,7 +110,13 @@ body {
     margin-right: 10px;
 }
 
-
+.header-contain {
+    padding-top: 10px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 .list-i {
     display: flex;
@@ -119,6 +125,20 @@ body {
     padding-right: 8px;
 
 }
+
+.list-i-chat {
+    display: none;
+
+
+}
+
+.list-chat {
+    font-size: 12px;
+    display: flex;
+
+    flex-direction: column;
+}
+
 
 
 
@@ -218,6 +238,15 @@ body {
         width: 60px;
     }
 
+    .list-i-chat {
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        padding-right: 8px;
+
+    }
+
+
     .list-i {
         display: none;
     }
@@ -262,6 +291,15 @@ body {
     .header {
         margin-bottom: 0;
     }
+
+    .list-i-chat {
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        padding-right: 8px;
+
+    }
+
 
     .list-i {
         display: flex;
